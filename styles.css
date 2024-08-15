@@ -1,3 +1,80 @@
-body{
-	background-color: darkblue;
+
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,77 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: lightblue;
+    font-family: monospace;
+}
+
+h1{
+    color: indianred;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo styling */
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Nav links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Fancy underline effect */
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFD700;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
