@@ -1,0 +1,25 @@
+body{
+	background:dodgerblue;
+	
+}
+.profile-info-container{
+	display: flex;
+	justify-content:flex-start;
+	gap:0px;
+	background:whitesmoke;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.profile-photo{
+	width: 50%;
+	height: 50%;
+	border-radius: 50px;
+}
+table{
+	border: solid 2px yellowgreen;
+}
+th,td{
+	border:solid 2px orange ;
+}
